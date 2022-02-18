@@ -23,7 +23,7 @@ public class CallRestWebService {
 // 2nd commit
 	//3rd commit
 	//4th commit
-	
+	//5th commit
 	public static final String endpoint = "http://ip-api.com/json";
 	//public static final String endpoint = "https://httpbin.org/get";
 	public static void main(String[] args) {
