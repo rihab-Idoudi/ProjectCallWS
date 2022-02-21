@@ -33,6 +33,7 @@ public class CallRestWebService {
 		String ip = "not found";
 		try {
 			HttpResponse response = client.execute(request);
+			//git
 			String jsonResponse = EntityUtils.toString(response.getEntity());
 			System.out.println("Response as String : " + jsonResponse);
 			JSONObject responseObj = new JSONObject(jsonResponse);
