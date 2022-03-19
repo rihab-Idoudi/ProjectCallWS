@@ -30,7 +30,7 @@ public class CallRestWebService {
 	public static void main(String[] args) {
 		HttpClient client = new DefaultHttpClient();
 		HttpGet request = new HttpGet(endpoint);
-		String ip = "not found";
+		String adresse = "not found";
 		try {
 			HttpResponse response = client.execute(request);
 			//git
@@ -39,8 +39,8 @@ public class CallRestWebService {
 			JSONObject responseObj = new JSONObject(jsonResponse);
 
 			//ip = responseObj.getString("origin");
-			ip = responseObj.getString("query");
-			System.out.println("ip : " + ip); 
+			adresse = responseObj.getString("query");
+			System.out.println("adresse : " + adresse); 
 
 		} catch (IOException e) {
 			e.printStackTrace();
